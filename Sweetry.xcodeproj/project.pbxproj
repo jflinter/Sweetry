@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0457BFE01C1D048400D0FC37 /* Retry.h in Headers */ = {isa = PBXBuildFile; fileRef = 0457BFDF1C1D048400D0FC37 /* Retry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0457BFE71C1D048400D0FC37 /* Retry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0457BFDC1C1D048400D0FC37 /* Retry.framework */; };
+		0457BFE71C1D048400D0FC37 /* Sweetry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0457BFDC1C1D048400D0FC37 /* Sweetry.framework */; };
 		0457BFEC1C1D048400D0FC37 /* RetryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457BFEB1C1D048400D0FC37 /* RetryTests.swift */; };
 		0457BFF71C1D049A00D0FC37 /* Retry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457BFF61C1D049A00D0FC37 /* Retry.swift */; };
 		0457C0061C1D14FC00D0FC37 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0457C0041C1D14FC00D0FC37 /* BrightFutures.framework */; };
@@ -42,10 +42,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0457BFDC1C1D048400D0FC37 /* Retry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Retry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0457BFDC1C1D048400D0FC37 /* Sweetry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sweetry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0457BFDF1C1D048400D0FC37 /* Retry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Retry.h; sourceTree = "<group>"; };
 		0457BFE11C1D048400D0FC37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0457BFE61C1D048400D0FC37 /* RetryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0457BFE61C1D048400D0FC37 /* Sweetry.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sweetry.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0457BFEB1C1D048400D0FC37 /* RetryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryTests.swift; sourceTree = "<group>"; };
 		0457BFED1C1D048400D0FC37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0457BFF61C1D049A00D0FC37 /* Retry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Retry.swift; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0457BFE71C1D048400D0FC37 /* Retry.framework in Frameworks */,
+				0457BFE71C1D048400D0FC37 /* Sweetry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,8 +88,8 @@
 		0457BFDD1C1D048400D0FC37 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0457BFDC1C1D048400D0FC37 /* Retry.framework */,
-				0457BFE61C1D048400D0FC37 /* RetryTests.xctest */,
+				0457BFDC1C1D048400D0FC37 /* Sweetry.framework */,
+				0457BFE61C1D048400D0FC37 /* Sweetry.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,9 +127,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0457BFDB1C1D048400D0FC37 /* Retry */ = {
+		0457BFDB1C1D048400D0FC37 /* Sweetry */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0457BFF01C1D048400D0FC37 /* Build configuration list for PBXNativeTarget "Retry" */;
+			buildConfigurationList = 0457BFF01C1D048400D0FC37 /* Build configuration list for PBXNativeTarget "Sweetry" */;
 			buildPhases = (
 				0457BFD71C1D048400D0FC37 /* Sources */,
 				0457BFD81C1D048400D0FC37 /* Frameworks */,
@@ -140,14 +140,14 @@
 			);
 			dependencies = (
 			);
-			name = Retry;
+			name = Sweetry;
 			productName = Retry;
-			productReference = 0457BFDC1C1D048400D0FC37 /* Retry.framework */;
+			productReference = 0457BFDC1C1D048400D0FC37 /* Sweetry.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		0457BFE51C1D048400D0FC37 /* RetryTests */ = {
+		0457BFE51C1D048400D0FC37 /* SweetryTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0457BFF31C1D048400D0FC37 /* Build configuration list for PBXNativeTarget "RetryTests" */;
+			buildConfigurationList = 0457BFF31C1D048400D0FC37 /* Build configuration list for PBXNativeTarget "SweetryTests" */;
 			buildPhases = (
 				0457BFE21C1D048400D0FC37 /* Sources */,
 				0457BFE31C1D048400D0FC37 /* Frameworks */,
@@ -159,9 +159,9 @@
 			dependencies = (
 				0457BFE91C1D048400D0FC37 /* PBXTargetDependency */,
 			);
-			name = RetryTests;
+			name = SweetryTests;
 			productName = RetryTests;
-			productReference = 0457BFE61C1D048400D0FC37 /* RetryTests.xctest */;
+			productReference = 0457BFE61C1D048400D0FC37 /* Sweetry.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -182,7 +182,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0457BFD61C1D048400D0FC37 /* Build configuration list for PBXProject "Retry" */;
+			buildConfigurationList = 0457BFD61C1D048400D0FC37 /* Build configuration list for PBXProject "Sweetry" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -194,8 +194,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0457BFDB1C1D048400D0FC37 /* Retry */,
-				0457BFE51C1D048400D0FC37 /* RetryTests */,
+				0457BFDB1C1D048400D0FC37 /* Sweetry */,
+				0457BFE51C1D048400D0FC37 /* SweetryTests */,
 			);
 		};
 /* End PBXProject section */
@@ -239,7 +239,7 @@
 /* Begin PBXTargetDependency section */
 		0457BFE91C1D048400D0FC37 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0457BFDB1C1D048400D0FC37 /* Retry */;
+			target = 0457BFDB1C1D048400D0FC37 /* Sweetry */;
 			targetProxy = 0457BFE81C1D048400D0FC37 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -352,7 +352,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jflinter.Retry;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Sweetry;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -376,7 +376,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jflinter.Retry;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Sweetry;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -391,7 +391,7 @@
 				INFOPLIST_FILE = RetryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jflinter.RetryTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Sweetry;
 			};
 			name = Debug;
 		};
@@ -405,14 +405,14 @@
 				INFOPLIST_FILE = RetryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jflinter.RetryTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Sweetry;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0457BFD61C1D048400D0FC37 /* Build configuration list for PBXProject "Retry" */ = {
+		0457BFD61C1D048400D0FC37 /* Build configuration list for PBXProject "Sweetry" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0457BFEE1C1D048400D0FC37 /* Debug */,
@@ -421,7 +421,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0457BFF01C1D048400D0FC37 /* Build configuration list for PBXNativeTarget "Retry" */ = {
+		0457BFF01C1D048400D0FC37 /* Build configuration list for PBXNativeTarget "Sweetry" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0457BFF11C1D048400D0FC37 /* Debug */,
@@ -429,7 +429,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		0457BFF31C1D048400D0FC37 /* Build configuration list for PBXNativeTarget "RetryTests" */ = {
+		0457BFF31C1D048400D0FC37 /* Build configuration list for PBXNativeTarget "SweetryTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0457BFF41C1D048400D0FC37 /* Debug */,

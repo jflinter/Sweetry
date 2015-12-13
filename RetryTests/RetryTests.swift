@@ -18,12 +18,12 @@ enum RetryTestError: ErrorType {
 class RetryTests: XCTestCase {
     
     func testLinearBackoff() {
-        let times = [0, 1, 2, 3, 4].map({ return BackoffStrategy.Linear(initialDelay: 1, delta: 5).timeToWait($0) })
+        let times = [0, 1, 2, 3, 4].map({ return BackoffStrategies.Linear(initialDelay: 1, delta: 5).timeToWait($0) })
         XCTAssertEqual(times, [0, 1, 6, 11, 16])
     }
     
     func testExponentialBackoff() {
-        let times = [0, 1, 2, 3, 4].map({ return BackoffStrategy.Exponential(initialDelay: 4, exponentBase: 2).timeToWait($0) })
+        let times = [0, 1, 2, 3, 4].map({ return BackoffStrategies.Exponential(initialDelay: 4, exponentBase: 2).timeToWait($0) })
         XCTAssertEqual(times, [0, 4, 8, 16, 32])
     }
     

@@ -9,10 +9,14 @@
 import BrightFutures
 import Result
 
-public enum BackoffStrategy {
+public protocol BackoffStrategy {
+    func timeToWait(iteration: Int) -> NSTimeInterval
+}
+
+public enum BackoffStrategies: BackoffStrategy {
     case Linear(initialDelay: NSTimeInterval, delta: NSTimeInterval)
     case Exponential(initialDelay: NSTimeInterval, exponentBase: Int)
-    func timeToWait(iteration: Int) -> NSTimeInterval {
+    public func timeToWait(iteration: Int) -> NSTimeInterval {
         if iteration == 0 { return 0 }
         switch self {
             case .Linear(let initialDelay, let delta): return initialDelay + (delta * Double(iteration - 1))
@@ -41,7 +45,7 @@ public class Retry<T, E: ErrorType> {
     private let queue: Queue
     private var started = false
 
-    public init(maxAttempts: Int? = nil, backoffStrategy: BackoffStrategy = .Exponential(initialDelay: 5, exponentBase: 2), queue: Queue = Queue.global, operation: Void -> Future<T, E>) {
+    public init(maxAttempts: Int? = nil, backoffStrategy: BackoffStrategy = BackoffStrategies.Exponential(initialDelay: 5, exponentBase: 2), queue: Queue = Queue.global, operation: Void -> Future<T, E>) {
         self.maxAttempts = maxAttempts
         self.backoffStrategy = backoffStrategy
         self.promise = Promise<T, RetryError>()

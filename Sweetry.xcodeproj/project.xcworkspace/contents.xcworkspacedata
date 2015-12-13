@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Retry.xcodeproj">
+      location = "self:/Users/jack/Developer/Retry/Sweetry.xcodeproj">
    </FileRef>
 </Workspace>
