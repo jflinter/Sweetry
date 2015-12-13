@@ -33,6 +33,7 @@ class RetryTests: XCTestCase {
         })
         let expectation = expectationWithDescription("woo")
         retry.future.onSuccess { _ in expectation.fulfill() }
+        retry.start()
         waitForExpectationsWithTimeout(1, handler: nil)
     }
     
@@ -49,6 +50,7 @@ class RetryTests: XCTestCase {
             }
             expectation.fulfill()
         }
+        retry.start()
         waitForExpectationsWithTimeout(1, handler: nil)
     }
     
@@ -64,6 +66,7 @@ class RetryTests: XCTestCase {
         })
         let expectation = expectationWithDescription("woo")
         retry.future.onSuccess { _ in expectation.fulfill() }
+        retry.start()
         waitForExpectationsWithTimeout(6, handler: nil)
     }
     

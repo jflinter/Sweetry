@@ -28,12 +28,18 @@ public enum RetryError: ErrorType {
 public class Retry<T, E: ErrorType> {
     
     var future: Future<T, RetryError> { return self.promise.future }
+    public func start() {
+        if self.started { return }
+        self.started = true
+        self.run(self.maxAttempts, iteration: 0, after: .In(0))
+    }
     
     private let maxAttempts: Int?
     private let promise: Promise<T, RetryError>
     private let backoffStrategy: BackoffStrategy
     private let operation: Void -> Future<T, E>
     private let queue: Queue
+    private var started = false
 
     public init(maxAttempts: Int? = nil, backoffStrategy: BackoffStrategy = .Exponential(initialDelay: 5, exponentBase: 2), queue: Queue = Queue.global, operation: Void -> Future<T, E>) {
         self.maxAttempts = maxAttempts
@@ -41,7 +47,6 @@ public class Retry<T, E: ErrorType> {
         self.promise = Promise<T, RetryError>()
         self.operation = operation
         self.queue = queue
-        self.run(maxAttempts, iteration: 0, after: .In(0))
     }
     
     private func run(remainingAttempts: Int?, iteration: Int, after: TimeInterval) {
